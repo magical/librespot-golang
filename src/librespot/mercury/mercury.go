@@ -1,13 +1,13 @@
 package mercury
 
 import (
-	"Spotify"
 	"bytes"
 	"encoding/binary"
 	"fmt"
 	"github.com/golang/protobuf/proto"
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
 	"io"
-	"librespot/connection"
 	"sync"
 )
 
