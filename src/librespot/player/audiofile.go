@@ -1,16 +1,17 @@
 package player
 
 import (
-	"Spotify"
 	"bytes"
 	"crypto/aes"
 	"crypto/cipher"
 	"encoding/binary"
 	"fmt"
 	"io"
-	"librespot/connection"
 	"math"
 	"sync"
+
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
 )
 
 const kChunkSize = 32768 // In number of words (so actual byte size is kChunkSize*4, aka. kChunkByteSize)

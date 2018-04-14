@@ -1,12 +1,13 @@
 package spirc
 
 import (
-	"Spotify"
 	"bytes"
-	"github.com/golang/protobuf/proto"
-	"librespot/connection"
-	"librespot/mercury"
 	"testing"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
+	"github.com/librespot-org/librespot-golang/src/librespot/mercury"
 )
 
 type fakeServer struct {

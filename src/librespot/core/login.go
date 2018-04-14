@@ -1,15 +1,16 @@
 package core
 
 import (
-	"Spotify"
 	"bytes"
 	"encoding/base64"
 	"fmt"
-	"github.com/golang/protobuf/proto"
-	"librespot/connection"
-	"librespot/discovery"
-	"librespot/utils"
 	"log"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
+	"github.com/librespot-org/librespot-golang/src/librespot/discovery"
+	"github.com/librespot-org/librespot-golang/src/librespot/utils"
 )
 
 var Version = "master"

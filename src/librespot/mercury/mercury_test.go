@@ -1,13 +1,14 @@
 package mercury
 
 import (
-	"Spotify"
 	"encoding/binary"
-	"github.com/golang/protobuf/proto"
-	"librespot/connection"
-	"librespot/core"
-	"librespot/spirc"
 	"testing"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
+	"github.com/librespot-org/librespot-golang/src/librespot/core"
+	"github.com/librespot-org/librespot-golang/src/librespot/spirc"
 )
 
 func setupTestController(stream connection.PacketStream) *spirc.Controller {

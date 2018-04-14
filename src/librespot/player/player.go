@@ -1,14 +1,15 @@
 package player
 
 import (
-	"Spotify"
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"librespot/connection"
-	"librespot/mercury"
 	"log"
 	"sync"
+
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
+	"github.com/librespot-org/librespot-golang/src/librespot/mercury"
 )
 
 type Player struct {

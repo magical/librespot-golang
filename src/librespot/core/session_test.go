@@ -1,17 +1,18 @@
 package core
 
 import (
-	"Spotify"
 	"bytes"
 	"encoding/binary"
-	"github.com/golang/protobuf/proto"
 	"io"
-	"librespot/connection"
-	"librespot/crypto"
-	"librespot/mercury"
-	"librespot/spirc"
 	"math/big"
 	"testing"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
+	"github.com/librespot-org/librespot-golang/src/librespot/crypto"
+	"github.com/librespot-org/librespot-golang/src/librespot/mercury"
+	"github.com/librespot-org/librespot-golang/src/librespot/spirc"
 )
 
 type shanPacket struct {

@@ -5,11 +5,12 @@ import (
 	"flag"
 	"fmt"
 	"librespot"
-	"librespot/core"
-	"librespot/spirc"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/librespot-org/librespot-golang/src/librespot/core"
+	"github.com/librespot-org/librespot-golang/src/librespot/spirc"
 )
 
 const defaultdevicename = "librespot"

@@ -1,19 +1,20 @@
 package core
 
 import (
-	"Spotify"
 	"bytes"
 	"fmt"
-	"github.com/golang/protobuf/proto"
 	"io"
-	"librespot/connection"
-	"librespot/crypto"
-	"librespot/discovery"
-	"librespot/mercury"
-	"librespot/player"
-	"librespot/utils"
 	"log"
 	"net"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
+	"github.com/librespot-org/librespot-golang/src/librespot/crypto"
+	"github.com/librespot-org/librespot-golang/src/librespot/discovery"
+	"github.com/librespot-org/librespot-golang/src/librespot/mercury"
+	"github.com/librespot-org/librespot-golang/src/librespot/player"
+	"github.com/librespot-org/librespot-golang/src/librespot/utils"
 )
 
 // Session represents an active Spotify connection

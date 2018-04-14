@@ -1,12 +1,13 @@
 package mercury
 
 import (
-	"Spotify"
 	"encoding/json"
 	"fmt"
-	"github.com/golang/protobuf/proto"
-	"librespot/metadata"
 	"net/url"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/metadata"
 )
 
 func (m *Client) mercuryGet(url string) []byte {

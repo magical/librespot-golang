@@ -3,10 +3,11 @@
 package librespot
 
 import (
-	"Spotify"
 	"encoding/json"
 	"fmt"
 	"io"
+
+	"github.com/librespot-org/librespot-golang/src/Spotify"
 )
 
 type Updater interface {

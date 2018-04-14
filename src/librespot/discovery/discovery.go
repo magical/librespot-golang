@@ -5,18 +5,18 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/badfortrains/mdns"
 	"log"
 	"math/rand"
+	"net"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
 	"sync"
 
-	"librespot/crypto"
-	"librespot/utils"
-	"net"
+	"github.com/badfortrains/mdns"
+	"github.com/librespot-org/librespot-golang/src/librespot/crypto"
+	"github.com/librespot-org/librespot-golang/src/librespot/utils"
 )
 
 // connectInfo stores the information about Spotify Connect connection

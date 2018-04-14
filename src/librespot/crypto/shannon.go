@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"encoding/binary"
 	"io"
-	"librespot/connection"
 	"log"
+
+	"github.com/librespot-org/librespot-golang/src/librespot/connection"
 )
 
 type shannonStream struct {

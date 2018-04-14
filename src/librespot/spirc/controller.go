@@ -1,15 +1,16 @@
 package spirc
 
 import (
-	"Spotify"
 	"errors"
 	"fmt"
-	"github.com/golang/protobuf/proto"
-	"librespot/core"
-	"librespot/mercury"
-	"librespot/utils"
 	"strings"
 	"sync"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/librespot-org/librespot-golang/src/Spotify"
+	"github.com/librespot-org/librespot-golang/src/librespot/core"
+	"github.com/librespot-org/librespot-golang/src/librespot/mercury"
+	"github.com/librespot-org/librespot-golang/src/librespot/utils"
 )
 
 // Controller is a structure for Spotify Connect remote control interface.
