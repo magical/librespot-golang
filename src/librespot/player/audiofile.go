@@ -97,8 +97,8 @@ func (a *AudioFile) Read(buf []byte) (int, error) {
 			hasChunks = false
 		} else if hasChunks {
 			// As long as we have contiguous chunks, write them to the output buffer
-			dataCursorEnd := min(a.cursor+kChunkByteSize, int(a.size))
-			writtenLen := copy(buf[outBufCursor:], a.data[a.cursor:dataCursorEnd])
+			chunkEnd := min((i+1)*kChunkByteSize, int(a.size))
+			writtenLen := copy(buf[outBufCursor:], a.data[a.cursor:chunkEnd])
 			outBufCursor += writtenLen
 			a.cursor += writtenLen
 			totalWritten += writtenLen
